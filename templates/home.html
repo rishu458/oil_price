@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oil Price App</title>
+  <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
+</head>
+<body>
+  <header>
+    <h1>Oil Price Tracker</h1>
+  </header>
+
+  <main>
+    <section class="price-card">
+      <h2>Current Oil Price</h2>
+      <p id="price">$ --</p>
+      <button onclick="getPrice()">Refresh Price</button>
+    </section>
+
+    <section class="history-card">
+      <h2>Price History</h2>
+      <ul id="history-list">
+        <li>No history yet...</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Oil Price App</p>
+  </footer>
+
+  <script src="{% static 'myapp/script.js' %}"></script>
+</body>
+</html>
