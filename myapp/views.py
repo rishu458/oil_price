@@ -9,7 +9,7 @@ def home(request):
 
 def get_oil_price(request):
     # Example: price could come from a database or API
-    price = 150.50  # static for now
+    price = 200.50  # static for now
     now = datetime.now().strftime("%H:%M:%S")
     return JsonResponse({"price": price, "time": now})
 
